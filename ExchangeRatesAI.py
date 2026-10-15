@@ -1,6 +1,5 @@
 import csv
 
-
 class ExchangeRates:
     def __init__(self, filename):
         self.exchange_rate = self.read_exchange_rate(filename)
@@ -52,9 +51,7 @@ def main():
         to_currency
     )
 
-    print(
-        f"${converted_amount:,.2f} {to_currency.upper()}"
-    )
+    print(f"${converted_amount:,.2f} {to_currency.upper()}")
 
 
 if __name__ == "__main__":
